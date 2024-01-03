@@ -27,10 +27,5 @@ public class AuthController {
     public ResponseEntity<?> login(@RequestBody AuthenticationRequestDto requestDto) {
         return authService.authenticateUser(requestDto);
     }
-
-    @GetMapping("/hello")
-    public String hello() {
-        return "Hello";
-    }
-
+    
 }
